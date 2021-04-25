@@ -149,7 +149,7 @@ public int minValue(){
 
         if(first != null && second != null)
             return first.value == second.value
-                    && checkEquality(first.leftChild,second.leftChild)
+                   && checkEquality(first.leftChild,second.leftChild)
                     && checkEquality(first.rightChild,second.rightChild);
 
         return false;
