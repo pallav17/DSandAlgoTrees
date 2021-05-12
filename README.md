@@ -20,21 +20,17 @@ printLevelorder(tree)
     c) Dequeue a node from q.
 
  */
-
 class Node{
          int val;
         Node left;
         Node right;
-    
     public Node(int val)
     {
       this.val = val;
-    }
-            
+    }            
   }
 
 class Solution {
- 
   public static void main(String[] args) {
     
     Node node = new Node(3);
@@ -44,22 +40,12 @@ class Solution {
     node.left.right = new Node(2);
     node.right.left = new Node(6);
     node.right.right = new Node(7);
-    
-    
-    levelOrderTraversal(node);
-  
-      
+   levelOrderTraversal(node);
   }
-  
- 
-  
   public static void levelOrderTraversal(Node root)
   {
-    
-    Queue<Node> q = new LinkedList<Node>();
-    
-   Node temp = root;
-    
+   Queue<Node> q = new LinkedList<Node>();
+    Node temp = root;
     while(temp != null)
     {
        
@@ -68,19 +54,12 @@ class Solution {
       if(temp.left != null)
       {
         q.add(temp.left);
-        
-      }
-      
+       }
       if(temp.right != null)
       {
        q.add(temp.right); 
       }
-        
-      temp = q.poll();
-       
-      
+      temp = q.poll();    
   }
 }
-  
-  
-}
+  }
