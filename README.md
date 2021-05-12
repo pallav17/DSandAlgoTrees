@@ -30,8 +30,10 @@ class Node{
     }            
   }
 
+
 class Solution {
   public static void main(String[] args) {
+  
      Node node = new Node(3);
     node.left = new Node(4);
     node.right = new Node(8);
@@ -40,12 +42,14 @@ class Solution {
     node.right.left = new Node(6);
     node.right.right = new Node(7);
    levelOrderTraversal(node);
+   
   }
   public static void levelOrderTraversal(Node root)
   {
    Queue<Node> q = new LinkedList<Node>();
     Node temp = root;
     while(temp != null)
+    
     {      
       System.out.print(temp.val);
       
