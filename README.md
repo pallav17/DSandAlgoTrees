@@ -32,8 +32,7 @@ class Node{
 
 class Solution {
   public static void main(String[] args) {
-    
-    Node node = new Node(3);
+     Node node = new Node(3);
     node.left = new Node(4);
     node.right = new Node(8);
     node.left.left = new Node(1);
@@ -47,8 +46,7 @@ class Solution {
    Queue<Node> q = new LinkedList<Node>();
     Node temp = root;
     while(temp != null)
-    {
-       
+    {      
       System.out.print(temp.val);
       
       if(temp.left != null)
